@@ -1,0 +1,9 @@
+- 
+  name: Script copy
+  hosts:  all
+  vars:
+    source_file: file://script.sh
+  tasks:
+    - name: 'copy files'
+      src: {{source_file}}
+      dst: /tmp/
